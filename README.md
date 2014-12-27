@@ -1,8 +1,9 @@
-¬G¨Æ¤jºõ¡@
+Unity éŠæˆ²å°ˆæ¡ˆç¯„ä¾‹
+---
 
-¡@¬G¨Æµo¥Í¦b¸t½Ï¸`ªº©]±ß¡A¥D¨¤¾|³D¥¿­nª¦¤W¥Lªº§É¡A¦bºÎÄ±¤§«e¡A¾|³D¦V¤W«Ò¬è¨D¡A
-Åý¸t½Ï¦Ñ¤H°e¥L¤@¦ì¨­§÷¤õ»¶ªº¤k¹²³­¥L«×¹L³o¤@¦~¤@«×ªº¸`¤é¡AµM«á¨I¨IºÎ¥h¡C
+åˆ©ç”¨å…è²»çš„ç´ æå»ºç½®è¼•é‡åŒ–ä¸”å…·åŸºæœ¬æž¶æ§‹çš„æ•™å­¸ç”¨éŠæˆ²å°ˆæ¡ˆï¼Œä½¿ç”¨çš„èªžè¨€æ˜¯Javascriptã€‚
 
-¡@¡@°g°g½k½k¤¤¡A¾|³D¦n¹³¬Ý¨ì¤@¦ì¨­¬ï¤k¹²¸Ëªº¤H¦V¥L¨«¨Ó¡A¾|³D´|¤F´|²´·ú¡A§âµø½u¦b
-¨º¤H¨­¤W±½¤F¤@¹M¡Aª÷¾v¡B¤k¹²¸Ë¡C¦ý¡D¡D¡D¨­§÷¦n¹³¦³ÂI¸~¡D¡D¡D¦Ó¥B¡A¤U¥b¨­©~µM¬O
-¡D¡D¡D¥|¨¤¿Ç¡I¡H
+**ç•¶å‰åˆ†æ”¯**
+
+* è·‘é…·
+* å¡”é˜²
