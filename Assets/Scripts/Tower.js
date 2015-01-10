@@ -10,3 +10,8 @@ function Damage (dmg : int) {
 		hp = 0;
 	}
 }
+function Update (){
+	if(hp<=0){
+	Destroy(gameObject);
+	}
+}

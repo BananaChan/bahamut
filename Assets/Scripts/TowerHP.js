@@ -9,6 +9,7 @@ function Start () {
 }
 
 function Update () {
+	
 	nowHP = GetComponentInParent(Tower).hp;
 	
 	var rate = nowHP / oriHP;

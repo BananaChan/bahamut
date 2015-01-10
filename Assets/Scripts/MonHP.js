@@ -1,5 +1,6 @@
 ﻿#pragma strict
 
+var scalex : float;
 var oriHP : float;
 var nowHP : float;
 
@@ -20,5 +21,5 @@ function Update () {
 	else {
 		GetComponent(SpriteRenderer).color = Color.green;
 	}
-	transform.localScale.x = rate;
+	transform.localScale.x =scalex * rate;
 }
