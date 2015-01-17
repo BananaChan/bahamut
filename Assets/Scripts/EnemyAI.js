@@ -1,20 +1,26 @@
 ﻿#pragma strict
 
-var enemySpawnPoint : GameObject;
 var prefab : GameObject [];
 
 function Start () {
-
-	SpawnMonster(0, 2, 5, .3);
+	SpawnMon(0, 3, 5, 1.5f);
 	
-	yield WaitForSeconds(3);
-
-	SpawnMonster(1, 3, 10, .2);
+	yield WaitForSeconds(2f);
+	
+	InvokeRepeating("RegularSpawn", 0, 10f);
 }
 
-function SpawnMonster (startIndex : int, endIndex : int, amt : int, wait : float) {
-	for(var i=0;i<amt;i++) {
-		Instantiate(prefab[Random.Range(startIndex, endIndex)], enemySpawnPoint.transform.position, Quaternion.identity);
+function SpawnMon (start : int, end : int, amount : int, wait : float) {
+	for(var i=0;i<amount;i++) {
+		Instantiate(
+			prefab[Random.Range(start, end)],
+			GameObject.Find ("EnemySpawnPoint").transform.position,
+			Quaternion.identity
+		);
 		yield WaitForSeconds(wait);
 	}
+}
+
+function RegularSpawn () {
+	SpawnMon (0, 1, 10, 1f);
 }

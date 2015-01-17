@@ -1,17 +1,27 @@
 ﻿#pragma strict
 
-var hp : int = 1000;
+var oldHP : int;
+var hp : int = 500;
+private var anim : Animator;
 
-function Damage (dmg : int) {
-	if(hp - dmg >= 0) {
-		hp -= dmg;
+function Start () {
+	oldHP = hp;
+	anim = GetComponentInChildren(Animator);
+}
+
+function Update () {
+	if(hp <= 0) {
+		anim.SetTrigger("collapse");
+	}
+	
+	if(oldHP == hp) {
+		anim.SetBool("underattack", false);
 	}
 	else {
-		hp = 0;
+		anim.SetBool("underattack", true);
 	}
 }
-function Update (){
-	if(hp<=0){
-	Destroy(gameObject);
-	}
+
+function Damage (atk : int) {
+	hp -= atk;
 }

@@ -52,8 +52,8 @@ TextureImporter:
         y: 145
         width: 349
         height: 170
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .895312488, y: .0691752732}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Wheels
       rect:

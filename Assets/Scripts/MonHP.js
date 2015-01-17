@@ -1,25 +1,28 @@
 ﻿#pragma strict
 
-var scalex : float;
-var oriHP : float;
 var nowHP : float;
+var maxHP : float;
+var scaleX : float;
 
 function Start () {
-	oriHP = GetComponentInParent(Monster).hp;
+	maxHP = GetComponentInParent(Monster).hp;
+	nowHP = maxHP;
+	scaleX = transform.localScale.x;
 }
 
 function Update () {
 	nowHP = GetComponentInParent(Monster).hp;
+	var rate : float = nowHP / maxHP;
+	if(rate <= 0)rate = 0;
 	
-	var rate = nowHP / oriHP;
-	if(rate < .3) {
+	if(rate < 0.3) {
 		GetComponent(SpriteRenderer).color = Color.red;
 	}
-	else if(rate < .5) {
+	else if(rate < 0.5) {
 		GetComponent(SpriteRenderer).color = Color.yellow;
 	}
 	else {
 		GetComponent(SpriteRenderer).color = Color.green;
 	}
-	transform.localScale.x =scalex * rate;
+	transform.localScale.x = scaleX * rate;
 }

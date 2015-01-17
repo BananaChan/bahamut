@@ -1,10 +1,13 @@
 ﻿#pragma strict
 
-var cost : int = 1;
-var prefab : GameObject;
+private var spawnPoint : Transform;
+var prefab : GameObject[];
 
-function SummonMonster () {
-	if(GameObject.Find("Energy").GetComponent(Energy).SpendEnergy(cost)) {
-		Instantiate(prefab, GameObject.Find("MySpawnPoint").transform.position, Quaternion.identity);
-	}
+function Start () {
+	spawnPoint = GameObject.Find ("MySpawnPoint").transform;
+}
+
+function Summon (id : int) {
+	var obj : GameObject = Instantiate(prefab[id-1], spawnPoint.position, Quaternion.identity);
+	GameObject.Find("MyMon"+id).transform.Find ("CDTimer").SendMessage("Run");
 }
